@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Basic Web Concepts</title>
+        <link rel="stylesheet" type="text/css" href="IP%20Notes.css">
+        <script src="script.js"></script>
+    </head>
+    <body>
+    <header>
+        <div class="header">
+            <h1>Basic Web Concepts</h1><br>
+        </div>
+    </header>
+    <div><h2>Overview</h2>
+    <p>The world wide web is a collection of html docs and other types of files. HTML is the main document typee and glues everything together. It is made up of text, markup, references to other docs and links to other pages.</p>
+    </div>
+    <div><h2>HTML</h2>
+        <p>The language of the web. There are syntax and rules. BRowser turns HTML tags to elemetnts into a tree like structure (the DOM). Each tag in html has a name and describes what element is created.  The content goes in between the tags. </p>
+          <ul>
+              <li>HTML tags  &lt;&gt; and &lt;/&gt; (has opening and closing tags)</li>
+              <li>Examples: bold (b), italics (em)</li>
+              <li>HTML attributes have names and values.</li>
+              <li>Image tags - needs a source and alt (not required but useful for when images dont render and for people that rely on readers)</li>
+              <li>Whitespace (br tags and p tags)</li>
+              <li>inline (&lt;br&gt;, &lt;em&gt; and &lt;img&gt;,&lt;span&gt;) vs block (&lt;p&gt;, &lt;div&gt;) *Block inserts formatting while in line does not</li>  
+          </ul> 
+
+    <h3>Structure of HTML document </h3>
+        <ul>
+            <li>Doctype</li>
+            <li>Open and closing html tags</li>
+            <li>head: stores meta data and other stuff, where you would include javascript</li>
+            <li>body tag: contents of your docuent</li>
+        </ul>
+        <h3>Creating a Structured Document with HTML</h3>
+    <p>Tree Like Structure: Within one element you can have many. Inside a div you might have an h2 and a span within that. </p>
+
+    <p>Everything on a webpage is made of boxes. </p>
+    <p> You can convert boxes to HTML by starting to define boxes as div tags. You can also use class elements to help you remember what the div tags refer to. It's best practice to make sure they make sense so you can remember them later. </p>
+    </div>
+    <div><h2>Cascading Style Sheets (CSS)</h2>
+        <p>Cascading Style Sheets (CSS): iss code written to control the "style" of HTML elements. It helps to avoid reppetition in your code. 
+        </p>
+       <p> Can be compared to national, state, municipal laws, and house rules(most specific). CSS is set at the national level so all other areas inherrit the rules.<br>
+        For example: in CSS you have to write a selector. You can write one that applies to all paragraphs or just to a particular section of a page. You can also combine selectors. </p>     
+<h3>Types of selectors: </h3>
+        <ul>
+            <li><strong>ID selector:</strong> most powerful type. They beat out others when other types of selecotrs and the styles are defined within. It doesn't allow for lower-specificity. </li>
+            <li><strong>ID selector: </strong>most powerful type. They beat out others when other types of selecotrs and the styles are defined within. It doesn't allow for lower-specificity. </li>
+            <li><strong>Class selector: </strong>probably the most useful and versatile. Well supported by all browsers.  You can add multiple classes on HTML elements. </li>
+            <li><strong>Tag selector: </strong>Most useful when changing properties that are uniqe to that HTML element.  For exampel setting list styles or tab-size. </li>
+            <li><strong>Attribute selctor:</strong>Can be as useful as classes becuase they have the same specificity value but can be any attribute not just class.</li>
+            <li><strong>Positional selectors:</strong> There are several types beyond :nth-child. You can select elements based on their position in HTML</li>
+            <li><strong>Psudo selectors:</strong> :empty is one of many pseudo selectors, which you can recognize by the colon (:) in them. They typically represent something that you couldn't know by just the element and attributes alone.</li>
+        </ul>
+
+
+<h3>How to include CSS styling on a web page: </h3>
+    <ul>
+        <li><strong>Method 1: </strong>write CSS in the &lt;head&gt; of your HTML. Advantages: its good for small projects. 
+        <li><strong>Method 2:</strong> Link HTML to a seperate CSS file. Extra work up front to but allows you to stay more organized when working on larger projects. You also need to link the file in your HTML file. </li>
+        <li><strong>Method 3: </strong>Wite styles inline with HTML: Generally a bad idea because of a lot of repetition in your code. </li>
+    </ul>
+    
+<h3> CSS Resources</h3>
+    <ul>
+        <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference">CSS references</a></li>
+        <li><a href="https://css-tricks.com/how-css-selectors-work/">CSS selectors explained</a></li>
+        <li><a href="http://en.wikipedia.org/wiki/Cascading_Style_Sheets#Inheritance">CSS inheritance</a></li>
+        <li><a href="http://stackoverflow.com/questions/2612483/whats-so-bad-about-in-line-css">why it's bad to use in-line CSS</a></li>
+    </ul>
+ </div>       
+        
+    </body>
+</html>
