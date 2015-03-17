@@ -1,0 +1,38 @@
+/* This is a CSS comment. Below this line I assign values to various body properties (like padding, font-family, etc...) If you're curious about what any of these properties mean, just do a Google search for "CSS padding" for example.*/
+header, .full-width {
+    width: 100%;
+    background: #77DAFF;
+    padding-top: 15px;
+    color:black;
+    margin:0 auto;
+}
+.wrap{
+    width: 100%;
+    max-width: 24em;
+    margin: 0 auto;
+    padding: 0.25em 0.625em;
+}
+
+body {
+	font-family: Helvetica;
+	margin: 0px; 
+	font-size: 1.6em;
+}                 
+
+h1 {
+	text-align: center;
+	color: #282828; 
+}
+
+p {
+	margin: 15px 10px;
+}
+
+li {
+	font-size: .9em;
+	line-height: 1.25em;  
+}
+
+h2 {
+	margin: 10px;
+}
